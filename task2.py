@@ -5,9 +5,10 @@
 2 2
 4'''
 
-def recsum(a, b):
-    if b == 0:
-        return a
-    return 1 + recsum(a, b - 1)
-
-print(recsum(3, 2))
+def sum (a, b):
+    if a == 0:
+        return b;
+    return sum(a-1, b+1)
+a = int(input ( "введите число" ))
+b = int(input ( "введите второе число" ))
+print(sum(a,b))
